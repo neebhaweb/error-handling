@@ -1,0 +1,58 @@
+{
+  "name": "corrected-correct-error-handler",
+  "version": "0.5.6",
+  "description": "Just correct error handler for Express.JS apps returning JSON",
+  "main": "src/index.js",
+  "scripts": {
+    "ava": "ava -vs test/*.test.js",
+    "test": "npm run ava"
+  },
+  "dependencies": {
+    "debug": "2.6.4"
+  },
+  "devDependencies": {
+    "ava": "0.19.1",
+    "express": "4.15.3",
+    "babel-cli": "6.22.2",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-stage-0": "6.24.1",
+    "babel-register": "6.22.0",
+    "body-parser": "1.17.1",
+    "nyc": "10.2.0",
+    "require-subvert": "0.1.0",
+    "sinon": "2.1.0",
+    "supertest": "3.0.0"
+  },
+  "optionalDependencies": {
+    "rollbar": "2.0.2"
+  },
+  "ava": {
+    "require": "babel-register",
+    "babel": {
+      "presets": [
+        "es2015",
+        "stage-0"
+      ],
+      "plugins": [
+        "transform-runtime"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreychuk/correct-error-handler.git"
+  },
+  "keywords": [
+    "express",
+    "error",
+    "handler",
+    "JSON"
+  ],
+  "author": "andreychuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreychuk/correct-error-handler/issues"
+  },
+  "homepage": "https://github.com/andreychuk/correct-error-handler#readme"
+}
